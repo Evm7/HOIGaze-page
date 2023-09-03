@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta property="og:title" content="Human–object interaction prediction in videos through gaze following"/>
+  <meta property="og:url" content="https://evm7.github.io/HOIGaze-page/"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <title>Human–object interaction prediction in videos through gaze following</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="icon" href="static/figures/icon2.png">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+<section class="publication-header">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <!-- <div class="columns is-centered"> -->
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Human–object interaction prediction in videos through gaze following</h1>
+          <div class="is-size-3 publication-authors">
+          Journal of Computer Vision and Image Understanding
+          </div>
+        </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="publication-author-block">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="is-size-5 publication-authors">
+	    <span class="author-block"><a href="https://github.com/nizhf/hoi-prediction-gaze-transformer" target="_blank">Zhifan Ni</a>,</span>
+            <span class="author-block"><a href="https://evm7.github.io/" target="_blank">Esteve Valls Mascaro</a>,</span>
+            <span class="author-block"><a href="https://www.tuwien.at/etit/ict/asl/team/daniel-sliwowski" target="_blank">Hyemin Ahn</a>,</span>
+            <span class="author-block"><a href="https://www.tuwien.at/etit/ict/asl/team/dongheui-lee" target="_blank">Dongheui Lee</a>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Technische Universit ̈at M ̈unchen (TUM), Technische Universit ̈at Wien (TUWien), UNIST, DLR</span> 
+            <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+          </div>
+          
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2306.03597" target="_blank"
+                  class="external-link button is-normal is-rounded">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiV</span>
+                </a>
+              </span>
+
+              
+              <!-- PDF Link. -->
+              <span class="link-block">-->
+                <a href="https://doi.org/10.1016/j.cviu.2023.103741" target="_blank"-->
+                  class="external-link button is-normal is-rounded">-->
+                  <span class="icon">-->
+                    <i class="fas fa-file-pdf"></i>-->
+                  </span>-->
+                  <span>Paper</span>-->
+                </a>-->
+              </span>-->
+                            </span>-->
+              <!-- </span> -->
+              <!-- Colab Link. -->
+              <span class="link-block">-->
+               <a href="https://github.com/nizhf/hoi-prediction-gaze-transformer" target="_blank"-->
+                class="external-link button is-normal is-rounded">-->
+                <span class="icon">-->
+                  <i class="fab fa-github"></i>-->
+                </span>-->
+                <span>Code</span>-->
+              </a>-->
+             </span>-->
+
+<!--              <span class="link-block">-->
+<!--                <a href="ADD HERE REPLICATE IF NEEDED" target="_blank"-->
+<!--                class="external-link button is-normal is-rounded">-->
+<!--                <span class="icon">-->
+<!--                  <i class="fas fa-rocket"></i>-->
+<!--                </span>-->
+<!--                <span>Demo</span>-->
+<!--              </a>-->
+<!--              </span>-->
+              <!-- </span> -->
+              <!-- Colab Link. -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <!~~ <div class="hero-body"> ~~>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!~~ <div id="results-carousel" class="carousel results-carousel"> ~~>
+      <div class="container">
+      <div class="item">
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/Motivation.png" alt="HOIGaze"/>
+      </div>
+
+    </div>
+  </div>
+ <!~~  </div> ~~>
+  </div>
+  </div>
+ <!~~  </div> ~~>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="item">
+          <p style="margin-bottom: 30px">
+ 
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/main.mp4"
+          type="video/mp4">
+        </video>
+<!-- 
+        <iframe width="720" height="405" src=VIDEOLINK TO YOUTUBE IF THERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-->
+        </p>
+        </div>
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+           Understanding the human–object interactions (HOIs) from a video is essential to fully comprehend a visual scene. This line of research has been addressed by detecting HOIs from images and lately from videos. However, the video-based HOI anticipation task in the third-person view remains understudied. In this paper, we design a framework to detect current HOIs and anticipate future HOIs in videos. We propose to leverage human gaze information since people often fixate on an object before interacting with it. These gaze features together with the scene contexts and the visual appearances of human–object pairs are fused through a spatio-temporal transformer. To evaluate the model in the HOI anticipation task in a multi-person scenario, we propose a set of person-wise multi-label metrics. Our model is trained and validated on the VidHOI dataset, which contains videos capturing daily life and is currently the largest video HOI dataset. Experimental results in the HOI detection task show that our approach improves the baseline by a great margin of 36.3% relatively. Moreover,
+we conduct an extensive ablation study to demonstrate the effectiveness of our modifications and extensions to the spatio-temporal transformer.
+</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/Architecture.png" alt="Architecture of our HOIGaze model"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+         <h2 class="title is-3">How does it work?</h2> 
+        <div class="content has-text-justified">
+          <p>
+Overview of our video-based HOI detection and anticipation framework. The framework consists of three modules. The object module detects bounding boxes of humans {𝐛 s 𝑡,𝑖 } and objects {𝐛 𝑡,𝑗 }, and recognizes object classes {𝑐 𝑡,𝑗 }. An object tracker obtains human and object trajectories ({𝐇 𝑖 } and {𝐎 𝑗 }) in the video. Then, the human visual features {𝐯 s 𝑡,𝑖 }, object visual features {𝐯 𝑡,𝑗 }, visual relation features {𝐯 𝑡,⟨𝑖,𝑗⟩ }, and spatial relation features {𝐦 𝑡,⟨𝑖,𝑗⟩ } are extracted through a feature backbone. In addition, a word embedding model (Pennington et al., 2014) is applied to generate semantic features {𝐬 𝑡,𝑗 } of the object class. Meanwhile, the gaze module detects heads {𝐛 h 𝑡,𝑘 } in RGB frames, assigns them to detected humans, and generates gaze feature maps for each human {𝐠 𝑡,𝑖 } using a gaze-following model. Next, all features in a frame are projected by an input embedding sp block. The human–object pair features are concatenated to a sequence of pair representations 𝐗 𝑡 , which are refined to 𝐗 𝑡 by a spatial encoder. The spatial encoder also extracts a global context feature 𝐜 𝑡 from each frame. Then, the global features {𝐜 𝑡 } and projected human gaze features {𝐠 ′ 𝑡,𝑖 } are concatenated to build the person-wise sliding windows of context features. Meanwhile, several instance-level sliding windows are constructed, each only containing refined pair representations of one unique human–object pair across 𝐱 𝑡−𝐿+1,⟨𝑖,𝑗⟩ , … , 𝐱 𝑡,⟨𝑖,𝑗⟩ . A temporal encoder fuses context knowledge into the pair representations by the cross-attention mechanism. Finally, the prediction heads estimate the tmp probability distribution 𝐳 𝑡,⟨𝑖,𝑗⟩ of interactions for each human–object pair based on the last occurrence 𝐱 𝑡,⟨𝑖,𝑗⟩ in the temporal encoder output.
+</p>
+        <div class="columns is-centered has-text-centered">
+            <div class="item">
+          <p style="margin-bottom: 30px">
+<!--
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/page.mp4"
+          type="video/mp4">
+        </video>
+ --><br><br>
+        </p>
+        </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+            <div class="column is-four-fifths">
+         	<h2 class="title is-3">Qualitative Results</h2> 
+ 	</div>  
+        <img src="static/figures/Qualitative Results.png" alt="Qualitative Results of our model"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@inproceedings{
+mascaro2023hoiabot,
+title={{HOI}4{ABOT}: Human-Object Interaction Anticipation for Human Intention Reading Assistive ro{BOT}s},
+author={Esteve Valls Mascaro and Daniel Sliwowski and Dongheui Lee},
+booktitle={7th Annual Conference on Robot Learning},
+year={2023},
+url={https://openreview.net/forum?id=rYZBdBytxBx}
+}</code></pre>
+    </div>
+</section>
+
+
+
+
+<footer class="footer">
+ <!--  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+      <i class="fas fa-file-pdf"></i>
+    </a>
+    <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <i class="fab fa-github"></i>
+    </a>
+  </div> -->
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website is licensed under a <a rel="license"
+          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
+        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+
+  </body>
+  </html>
